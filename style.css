@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding:0;
+    background: #010201 url("bg.svg") no-repeat;
+    width:100%;
+
+}
+
+#beam{
+    transform-origin: 626px 444px;
+
+}
+#advice{
+    animation: anim 2s  infinite;
+}
+
+@keyframes anim{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+        opacity:40%;
+}
+    100%{
+        transform: translateY(0px);
+        opacity:100%;
+    }
+}
