@@ -5,16 +5,16 @@ const atr = 0.99;
 
 ///click event on box
 window.onload = function(){
-    let box = document.getElementById("box");
+    const box = document.getElementById("box");
     box.onclick = start;
 }
 function start(){
-    let advice = document.getElementById("advice");
+    const advice = document.getElementById("advice");
     advice.style.animation = "none"
     advice.style.opacity = "0%";
-    var beam = new movingOb(document.getElementById("beam"),421);
+    const beam = new movingOb(document.getElementById("beam"),421);
 }
-//Calss to rotate an element
+//Class to rotate an element
 class movingOb{
     constructor(ob,h){
         this.ang = Math.PI/180;

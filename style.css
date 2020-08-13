@@ -1,10 +1,18 @@
 body{
     margin: 0;
     padding:0;
-    background: #010201 url("bg.svg") no-repeat;
-    width:100%;
-
+    background-color: rgb(43, 40, 40);
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+body svg{
+    height: 95%;
+}
+
 
 #beam{
     transform-origin: 626px 444px;
