@@ -7,6 +7,7 @@ window.onload = function(){
     const box = document.getElementById("box");
     box.onclick = start;
 }
+///delete the advice from screen
 function start(){
     const advice = document.getElementById("advice");
     advice.style.animation = "none"
@@ -31,5 +32,5 @@ function rotation(ob){
     ob.id.style.transform= "rotate("+ob.ang+"rad)";   ///apply rotation at css
 
     window.requestAnimationFrame(function(){rotation(ob)});    ////let the animation last forever
-    ob.v*=friction;     ////aply
+    ob.v*=friction;     ////aply friction
 }
