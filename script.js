@@ -3,7 +3,7 @@ const g =1; //gravity
 const friction = 0.99;
 
 ///click event on box
-window.onload = function(){
+window.onload = () => {
     const box = document.getElementById("box");
     box.onclick = start;
 }
@@ -26,11 +26,11 @@ class movingOb{
 }
 function rotation(ob){
     let ang_transformed = (Math.PI/2)-ob.ang;    
-    ob.v += (2*Math.cos(ang_transformed)*g)/ob.h;   ///velocity equation
+    ob.v += (2*Math.cos(ang_transformed)*g)/ob.h;   ///acceleration equation
     ob.ang+= ob.v;  //acceleration
     
     ob.id.style.transform= "rotate("+ob.ang+"rad)";   ///apply rotation at css
 
-    window.requestAnimationFrame(function(){rotation(ob)});    ////let the animation last forever
+    window.requestAnimationFrame( () => {rotation(ob)});    ////let the animation last forever
     ob.v*=friction;     ////aply friction
 }
