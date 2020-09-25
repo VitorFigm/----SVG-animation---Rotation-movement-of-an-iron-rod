@@ -1,6 +1,8 @@
 //constants
-const g =1; //gravity
-const friction = 0.99;
+const my_consts = {
+    g:1, //gravity
+    friction: 0.99
+}
 
 ///click event on box
 window.onload = () => {
@@ -25,7 +27,9 @@ class movingOb{
     }
 }
 function rotation(ob){
-    let ang_transformed = (Math.PI/2)-ob.ang;    
+    const {g,friction} =  my_consts;
+    
+    const ang_transformed = (Math.PI/2)-ob.ang;    
     ob.v += (2*Math.cos(ang_transformed)*g)/ob.h;   ///acceleration equation
     ob.ang+= ob.v;  //acceleration
     
