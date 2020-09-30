@@ -38,7 +38,7 @@
 <g id="advice">
 	<g id="text">
 		<text transform="matrix(0.8403 0 0 1 433.0303 71.4922)" class="st6 st7 st8">Hey!</text>
-		<text transform="matrix(0.8403 0 0 1 293.4565 114.6924)" class="st6 st7 st8">Please, click in the box to</text>
+		<text transform="matrix(0.8403 0 0 1 293.4565 114.6924)" class="st6 st7 st8">Please, click at the box to</text>
 		<text transform="matrix(0.8403 0 0 1 339.6729 157.8926)" class="st6 st7 st8">see the movement</text>
 		<g>
 			<circle class="st9" cx="529.4" cy="59.5" r="25"/>
